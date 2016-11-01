@@ -1,0 +1,5 @@
+{
+    "name": "jayr/phpqrcode",
+    "description": "PHP implementation of QR Code 2-D barcode generator",
+    "require": {}
+}
