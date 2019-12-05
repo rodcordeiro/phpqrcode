@@ -69,7 +69,7 @@
     }    
         
     //display generated file
-    echo '<img src="'.$PNG_WEB_DIR.basename($filename).'" /><hr/>';  
+    echo '<a href="'.$PNG_WEB_DIR.basename($filename).'" download="'.$PNG_WEB_DIR.basename($filename).'"><img src="'.$PNG_WEB_DIR.basename($filename).'" /></a><hr/>';  
     
     //config form
     echo '<form action="index.php" method="post">
@@ -91,4 +91,10 @@
     // benchmark
     QRtools::timeBenchmark();    
 
-    
+    ?>
+    <style type="text/css">
+        *{
+            font-family: sans-serif;
+        }
+    </style>
+    <p style="font-size: 10pt; font-family: sans-serif; float: right;bottom: 0;position: absolute;">Created by <a href="https://github.com/jayralencar/phpqrcode" target="_blank">Jayr Alencar</a></p>
